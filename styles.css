@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template: 1fr 10fr / 1fr 6fr;
+  grid-template: 1fr auto / 1fr auto;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -90,7 +90,7 @@ h4 {
   padding: 1rem;
   background-color: #0f172a;
   display: grid;
-  grid-template: repeat(3, 1fr) / 1fr;
+  grid-template-rows: repeat(3, 250px);
 }
 
 .logo {
@@ -108,7 +108,7 @@ h4 {
 }
 
 .links {
-  margin-left: 2rem;
+  margin: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -117,7 +117,7 @@ h4 {
 .links > span {
   margin-bottom: .5rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -135,7 +135,7 @@ h4 {
 
 .log {
   display: grid;
-  grid-template: repeat(2, 3fr) / repeat(3, 3fr);
+  grid-template-columns: repeat(auto-fit, minmax(370px, 3fr));
   justify-items: center;
   align-items: center;
 }
@@ -174,10 +174,11 @@ h4 {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 .info > section {
+  margin-top: 3rem;
   margin-right: 1rem;
   padding: .8rem;
   border: 1px solid #0f172a;
