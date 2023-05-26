@@ -1,1 +1,1 @@
-# TOP-dashboard
+# The Odin Project CSS Grid Exercise Dashboard
